@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.3.4</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.myshop</groupId>
+    <artifactId>my-shop-parent</artifactId>
+    <version>${revision}</version>
+    <packaging>pom</packaging>
+    <name>MyShop E-commerce Backend</name>
+    <description>A modular Spring Boot backend for an e-commerce platform, covering products, orders, members, and store/admin management.</description>
+    <url>https://github.com/codecraftxabhi/JAVA-ecommerce-backend-api-MEMBER</url>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>Abhishek Verma</name>
+            <url>https://github.com/codecraftxabhi</url>
+        </developer>
+    </developers>
+    <modules>
+        <module>myshop-framework</module>
+        <module>myshop-module-buyer</module>
+        <module>myshop-module-manager</module>
+        <module>myshop-module-store</module>
+    </modules>
+    <scm>
+        <connection>scm:git:https://github.com/codecraftxabhi/JAVA-ecommerce-backend-api-MEMBER.git</connection>
+        <developerConnection>scm:git:https://github.com/codecraftxabhi/JAVA-ecommerce-backend-api-MEMBER.git</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/codecraftxabhi/JAVA-ecommerce-backend-api-MEMBER</url>
+    </scm>
+    <properties>
+        <java.version>17</java.version>
+        <revision>4.3</revision>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <mybatis-plus-version>3.5.5</mybatis-plus-version>
+        <mybatis-spring.version>3.0.3</mybatis-spring.version>
+        <sharding-jdbc-version>4.1.1</sharding-jdbc-version>
+        <sharding-namespace-version>4.0.1</sharding-namespace-version>
+        <druid-version>1.2.16</druid-version>
+        <sharding-jdbc-version>4.1.1</sharding-jdbc-version>
+        <lombok-version>1.18.30</lombok-version>
+        <redisson>3.15.6</redisson>
+        <Hutool-version>5.8.24</Hutool-version>
+        <fastjson2.version>2.0.51</fastjson2.version>
+        <jwt-version>0.11.2</jwt-version>
+        <knife4j.version>3.0.3</knife4j.version>
+        <simple-http-version>1.0.3</simple-http-version>
+        <springfox-version>3.0.0</springfox-version>
+        <swagger-bootstrap-ui>1.8.5</swagger-bootstrap-ui>
+        <de.codecentric>2.6.6</de.codecentric>
+        <elasticsearch.version>7.17.3</elasticsearch.version>
+        <enjoy.version>4.3</enjoy.version>
+        <userAgentUtils>1.21</userAgentUtils>
+        <poi-version>5.1.0</poi-version>
+        <poi-ooxml-version>5.1.0</poi-ooxml-version>
+        <slf4j-api>1.7.36</slf4j-api>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <parameters>true</parameters>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
